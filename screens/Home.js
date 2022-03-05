@@ -1,14 +1,12 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React, { Component } from 'react'
-import Card from './components/Card'
-export class Home extends Component {
-  render() {
+import { StyleSheet, View } from 'react-native'
+import React from 'react'
+import ProgramCard from './components/ProgramCard'
+export function Home({navigation}) {
     return (
       <View style={styles.container}>
-        <Card />
+        <ProgramCard navigation={navigation} />
       </View>
     )
-  }
 }
 
 const styles = StyleSheet.create({
